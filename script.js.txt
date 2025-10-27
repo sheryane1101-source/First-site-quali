@@ -1,0 +1,11 @@
+function changerMessage() {
+  const message = document.getElementById("message");
+  const messages = [
+    "Bravo, tu as cliqué ! 🎈",
+    "Trop cool ! 😎",
+    "Tu es génial(e) ! 🌟",
+    "Merci pour le clic 💫",
+    "Continues comme ça 🚀"
+  ];
+  message.innerText = messages[Math.floor(Math.random() * messages.length)];
+}
