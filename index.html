@@ -3,14 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Premier Site 🌟</title>
+  <title>Esmaat Caftans - Boutique de Caftans, Voiles et Vêtements</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>🌟 Bienvenue sur mon premier site 🌟</header>
+    <!-- ANIMATION D'INTRO -->
+<div id="intro">
+  <h1>Esmaat Caftan</h1>
+</div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Esmaat Caftans</div>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Caftans</a></li>
+        <li><a href="#">Voiles</a></li>
+        <li><a href="#">Vêtements</a></li>
+      </ul>
+      <!-- HAMBURGER MENU -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
 
+    <!-- FAVORIS ET PANIER -->
+    <div class="cart-fav">
+      <span id="fav-count">❤ 0</span>
+      <span id="cart-count">🛒 0</span>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <main>
-    <h1>Salut 👋</h1>
-    <p>Je viens de créer mon tout premier site web grâce à HTML, CSS & JavaScript ! 🎉</p>
-    <button onclick="changerMessage()">Clique ici 😄</button>
-    <p id="message"></p>
+    
+    <!-- FILTRES LATERAUX -->
+    <aside class="filters">
+      <h3>Filtrer par catégorie</h3>
+      <select id="filter-category">
+        <option value="all">Tout</option>
+        <option value="caftan">Caftans</option>
+        <option value="voile">Voiles</option>
+        <option value="vetement">Vêtements</option>
+      </select>
+
+      <h3>Prix maximum : <span id="price-value">200</span>€</h3>
+      <input type="range" id="filter-price" min="10" max="200" value="200">
+    </aside>
+
+    <!-- PRODUITS -->
+    <section class="product-section">
+      <div id="products-container" class="products">
+        <!-- Les produits seront générés dynamiquement avec JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL PANIER -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Panier</h2>
+      <div id="cart-items"></div>
+      <button id="checkout">Passer au paiement</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Boutique de vêtements de LYLY !</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
