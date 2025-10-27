@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Premier Site 🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>🌟 Bienvenue sur mon premier site 🌟</header>
+
+  <main>
+    <h1>Salut 👋</h1>
+    <p>Je viens de créer mon tout premier site web grâce à HTML, CSS & JavaScript ! 🎉</p>
+    <button onclick="changerMessage()">Clique ici 😄</button>
+    <p id="message"></p>
